@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+header{
+    background-color: rgba(245, 222, 178, .5);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1{
+    width: 45%;
+    text-align: center;
+}
+
+svg{
+    width: 30px;
+}
+
+.container-icon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 25px;
+}
+
+.container-cart-products{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.bag{
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.total-pagar{
+    display: flex;
+}
+
+.container-items{
+    background-color: rgb(215, 249, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.icon-cart{
+    width: 60px;
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+} 
+
+.hidden-cart{
+    top: 40px;
+    right: 50px;
+    width: 250px;
+    height: 50px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    padding-left: 15px;
+    background-color: rgb(241, 213, 164);
+    position: absolute;
+}
+
+.hidden-cart h3{
+    text-align: center;
+    width: 180px;
+    border-bottom: solid black 2px;
+}
+
+.cart-total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-total p{
+    margin-right: 13px;
+}
+
+.row{
+    display: flex;
+}
+
+.item{
+    background-color:rgb(229, 229, 247);
+    border-radius: 10px;
+    margin: 25px;
+    padding: 25px;
+    width: 300px;
+    color: #696871;
+    transition: .5s;
+}
+
+.item:hover{
+    background-color: rgb(90, 255, 205);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.item img{ 
+    width: 250px;
+    border: solid #696871 3px;
+    border-radius: 5px;
+}
+
+.item h2{
+    margin: 5px;
+    color: #1D293F;
+}
+
+.item p{
+    margin: 5px;
+}
+
+.item button{
+    border: none;
+    width: 150px;
+    height: 45px;
+    margin: 5px;
+    background-color: #FFF;
+    color: rgb(57, 177, 141);
+    font-weight: 700;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.item button:hover{
+    background-color: rgb(62, 185, 148);
+    color: #FFF;
+    transition: .5s;
+}
+
+.item button:active{
+    transform: scale(.9);
+    transition: .2s;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 29);
+    color: #FFF;
+}
+
+.social a svg{
+    margin: 5px;
+    cursor: pointer;
+}
